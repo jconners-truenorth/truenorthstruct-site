@@ -1,0 +1,94 @@
+/* =========================
+   Fonts
+========================= */
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('assets/fonts/IBMPlexSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('assets/fonts/IBMPlexSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =========================
+   Base
+========================= */
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #1f2a37;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #ffffff;
+}
+
+.brand {
+    font-weight: 500;
+}
+
+.links a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: #1f2a37;
+    transition: opacity 0.2s ease;
+}
+
+.links a:hover {
+    opacity: 0.6;
+}
+
+/* =========================
+   Content Layout
+========================= */
+
+.content {
+    padding: 80px 40px 120px 40px;
+    max-width: 850px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #2c3642;
+    margin-bottom: 28px;
+}
+
+/* =========================
+   Project Attribution Note
+========================= */
+
+.project-note {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 40px;
+}
