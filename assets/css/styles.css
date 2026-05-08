@@ -43,6 +43,12 @@ body {
     width: auto;
 }
 
+.logo a {
+    color: #1f2a37;
+    font-weight: 500;
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     gap: 28px;
@@ -60,6 +66,16 @@ nav a {
 nav a:hover {
     color: #B0141A;
     /* darker red on hover */
+}
+
+nav a[aria-current="page"] {
+    color: #B0141A;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid rgba(176, 20, 26, 0.55);
+    outline-offset: 4px;
 }
 
 .divider {
@@ -95,6 +111,15 @@ h2 {
 p {
     line-height: 1.6;
     font-size: 16px;
+}
+
+main a {
+    color: #B0141A;
+    text-underline-offset: 3px;
+}
+
+main a:hover {
+    color: #EE1C25;
 }
 
 /* ===== Form Styling ===== */
@@ -135,6 +160,11 @@ input:focus,
 textarea:focus {
     outline: none;
     border-color: #B0141A;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    box-shadow: 0 0 0 3px rgba(176, 20, 26, 0.12);
 }
 
 button {
