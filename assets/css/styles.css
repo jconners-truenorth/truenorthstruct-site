@@ -199,3 +199,162 @@ button:hover {
 .about-body p {
     max-width: 750px;
 }
+
+/* ===== Portfolio Page ===== */
+
+.portfolio-hero {
+    margin-bottom: 60px;
+}
+
+.portfolio-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c3642;
+    max-width: 700px;
+}
+
+.portfolio-list {
+    margin-bottom: 0;
+}
+
+.featured-project {
+    border-top: 1px solid #e5e7eb;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    gap: 36px;
+    padding-top: 32px;
+}
+
+.featured-project-media {
+    display: block;
+}
+
+.featured-project-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.featured-project-content {
+    align-self: center;
+}
+
+.project-link {
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.project-grid-section {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 60px;
+    padding-top: 32px;
+}
+
+.project-grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.project-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+
+.project-card h3 a {
+    color: #1f2a37;
+    text-decoration: none;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 720px) {
+    .featured-project,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-project {
+        gap: 24px;
+    }
+}
+
+.project-entry {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 32px;
+}
+
+.project-eyebrow {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.project-media {
+    margin: 28px 0 0;
+}
+
+.project-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-gallery {
+    margin-top: 20px;
+}
+
+.project-gallery .project-media {
+    margin-top: 0;
+}
+
+.photo-credit {
+    color: #6b7280;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 36px;
+    margin: 32px 0;
+}
+
+.project-meta div {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 12px;
+}
+
+.project-meta dt {
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.project-meta dd {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.project-note {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 650px;
+}
