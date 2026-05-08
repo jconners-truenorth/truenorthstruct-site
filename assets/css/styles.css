@@ -1,94 +1,171 @@
-/* =========================
-   Fonts
-========================= */
+/* ===== Base Typography ===== */
 
 @font-face {
     font-family: 'IBM Plex Sans';
-    src: url('assets/fonts/IBMPlexSans-Regular.woff2') format('woff2');
+    src: url('../fonts/IBMPlexSans-Regular.woff2') format('woff2');
     font-weight: 400;
-    font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'IBM Plex Sans';
-    src: url('assets/fonts/IBMPlexSans-Medium.woff2') format('woff2');
+    src: url('../fonts/IBMPlexSans-Medium.woff2') format('woff2');
     font-weight: 500;
-    font-style: normal;
-    font-display: swap;
 }
-
-/* =========================
-   Base
-========================= */
 
 body {
     margin: 0;
-    background-color: #ffffff;
     font-family: 'IBM Plex Sans', sans-serif;
     color: #1f2a37;
+    background-color: #ffffff;
 }
 
-/* =========================
-   Navigation
-========================= */
+/* ===== Header ===== */
 
-.nav {
+.site-header {
+    background-color: #ffffff;
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 20px 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 40px;
-    font-size: 15px;
-    border-bottom: 1px solid #eee;
-    background-color: #ffffff;
 }
 
-.brand {
-    font-weight: 500;
+.logo img {
+    height: 60px;
+    /* controls logo size */
+    width: auto;
 }
 
-.links a {
-    margin-left: 28px;
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
     text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
     color: #1f2a37;
-    transition: opacity 0.2s ease;
+    letter-spacing: 0.3px;
+    transition: color 0.2s ease;
 }
 
-.links a:hover {
-    opacity: 0.6;
+nav a:hover {
+    color: #B0141A;
+    /* darker red on hover */
 }
 
-/* =========================
-   Content Layout
-========================= */
-
-.content {
-    padding: 80px 40px 120px 40px;
-    max-width: 850px;
+.divider {
+    height: 1px;
+    background-color: #e5e7eb;
+    margin-top: 10px;
 }
 
-.page-title {
+/* ===== Main Layout ===== */
+
+main {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h1 {
     font-size: 28px;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 18px;
 }
 
-.content p {
-    font-size: 17px;
-    line-height: 1.7;
-    color: #2c3642;
-    margin-bottom: 28px;
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 
-/* =========================
-   Project Attribution Note
-========================= */
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
 
-.project-note {
-    font-size: 0.85rem;
-    color: #777;
+/* ===== Form Styling ===== */
+
+form {
     margin-top: 40px;
+    max-width: 600px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #B0141A;
+}
+
+button {
+    background-color: #EE1C25;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #B0141A;
+}
+
+/* ===== About Page ===== */
+
+.about-hero {
+    margin-bottom: 60px;
+}
+
+.about-intro {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c3642;
+    max-width: 650px;
+}
+
+.about-body p {
+    max-width: 750px;
 }
