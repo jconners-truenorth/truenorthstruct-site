@@ -12,6 +12,18 @@ window.TRUE_NORTH_PROJECTS = [
         featured: true
     },
     {
+        title: "Net Zero at Panoramic Point",
+        slug: "net-zero-panoramic-point",
+        completedLabel: "2024",
+        sortMonth: "2024-10",
+        eyebrow: "Private residential work",
+        summary: "Full structural design for a high-elevation net-zero mountain home with custom framing, long overhangs, clerestory conditions, and coordinated foundation systems.",
+        thumbnail: "assets/images/net-zero-panoramic-point-placeholder.png",
+        thumbnailAlt: "Placeholder exterior view of a contemporary mountain home.",
+        url: "portfolio/net-zero-panoramic-point.html",
+        featured: false
+    },
+    {
         title: "Branscum Residence",
         slug: "branscum-residence",
         completedLabel: "Year TBD",
