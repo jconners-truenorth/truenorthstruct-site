@@ -276,8 +276,30 @@ button:hover {
 }
 
 .breadcrumb {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
     margin-bottom: 48px;
+}
+
+.breadcrumb a {
+    align-items: center;
+    color: #1f2a37;
+    display: inline-flex;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.breadcrumb a::before {
+    border-bottom: 2px solid #B0141A;
+    border-left: 2px solid #B0141A;
+    content: "";
+    height: 8px;
+    transform: rotate(45deg);
+    width: 8px;
+}
+
+.breadcrumb a:hover {
+    color: #B0141A;
 }
 
 @media (max-width: 720px) {

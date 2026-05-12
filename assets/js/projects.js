@@ -24,15 +24,15 @@ window.TRUE_NORTH_PROJECTS = [
         featured: false
     },
     {
-        title: "Branscum Residence",
-        slug: "branscum-residence",
-        completedLabel: "Year TBD",
-        sortMonth: "1900-01",
-        eyebrow: "Project template",
-        summary: "Placeholder project entry for a future residential structural engineering case study.",
-        thumbnail: "assets/images/branscum-residence-placeholder.png",
-        thumbnailAlt: "Placeholder exterior view of a contemporary residence.",
-        url: "portfolio/branscum-residence.html",
+        title: "Soda Creek Custom Compound",
+        slug: "soda-creek-compound",
+        completedLabel: "2023",
+        sortMonth: "2023-12",
+        eyebrow: "Private residential work",
+        summary: "Full structural design for a custom mountain compound with connected living spaces, a detached caretaker residence, exposed steel, heavy timber rafters, and custom recreational-space framing.",
+        thumbnail: "assets/images/soda-creek-compound-placeholder.png",
+        thumbnailAlt: "Placeholder exterior view of a contemporary mountain residence.",
+        url: "portfolio/soda-creek-compound.html",
         featured: false
     }
 ];
