@@ -18,8 +18,8 @@ window.TRUE_NORTH_PROJECTS = [
         sortMonth: "2024-10",
         eyebrow: "Private residential work",
         summary: "Full structural design for a high-elevation net-zero mountain home with custom framing, long overhangs, clerestory conditions, and coordinated foundation systems.",
-        thumbnail: "assets/images/net-zero-panoramic-point-placeholder.png",
-        thumbnailAlt: "Placeholder exterior view of a contemporary mountain home.",
+        thumbnail: "",
+        thumbnailAlt: "",
         url: "portfolio/net-zero-panoramic-point.html",
         featured: false
     },
@@ -30,9 +30,45 @@ window.TRUE_NORTH_PROJECTS = [
         sortMonth: "2023-12",
         eyebrow: "Private residential work",
         summary: "Full structural design for a custom mountain compound with connected living spaces, a detached caretaker residence, exposed steel, heavy timber rafters, and custom recreational-space framing.",
-        thumbnail: "assets/images/soda-creek-compound-placeholder.png",
-        thumbnailAlt: "Placeholder exterior view of a contemporary mountain residence.",
+        thumbnail: "",
+        thumbnailAlt: "",
         url: "portfolio/soda-creek-compound.html",
+        featured: false
+    },
+    {
+        title: "Residential Deck Expansion",
+        slug: "residential-deck-expansion",
+        completedLabel: "2025",
+        sortMonth: "2025-08",
+        eyebrow: "Residential deck renovation",
+        summary: "Full structural design for an elevated deck expansion in Steamboat Springs, including existing glulam evaluation, deep foundation upgrades, and coordinated stair details.",
+        thumbnail: "",
+        thumbnailAlt: "",
+        url: "portfolio/residential-deck-expansion.html",
+        featured: false
+    },
+    {
+        title: "Storm Meadows Townhome Expansions",
+        slug: "storm-meadows-townhome-expansions",
+        completedLabel: "Year TBD",
+        sortMonth: "0000-00",
+        eyebrow: "Multifamily remodel / addition",
+        summary: "Structural design and framing observations for extensive remodels and additions within an existing Steamboat Springs townhome development.",
+        thumbnail: "",
+        thumbnailAlt: "",
+        url: "portfolio/storm-meadows-townhome-expansions.html",
+        featured: false
+    },
+    {
+        title: "Good Garage",
+        slug: "good-garage",
+        completedLabel: "2026",
+        sortMonth: "2026-01",
+        eyebrow: "Adaptive reuse / renovation",
+        summary: "Full structural design for a small renovation project focused on practical coordination, permitting needs, and clear solutions for existing conditions.",
+        thumbnail: "",
+        thumbnailAlt: "",
+        url: "portfolio/good-garage.html",
         featured: false
     }
 ];

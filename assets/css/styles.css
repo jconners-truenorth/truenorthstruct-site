@@ -229,6 +229,11 @@ button:hover {
     display: block;
 }
 
+.featured-project-media,
+.project-card-media {
+    text-decoration: none;
+}
+
 .featured-project-media img {
     display: block;
     width: 100%;
@@ -262,6 +267,59 @@ button:hover {
     width: 100%;
     height: auto;
     margin-bottom: 16px;
+}
+
+.project-card-media {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.project-media-placeholder {
+    align-items: center;
+    aspect-ratio: 3 / 2;
+    background:
+        linear-gradient(rgba(31, 42, 55, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(31, 42, 55, 0.045) 1px, transparent 1px),
+        #f8f8f7;
+    background-size: 48px 48px;
+    border: 1px solid #e5e7eb;
+    color: #6b7280;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-media-placeholder::before {
+    background: url("../images/truenorthlogo-primary.png") center / 54% auto no-repeat;
+    content: "";
+    inset: 0;
+    opacity: 0.035;
+    position: absolute;
+}
+
+.project-media-placeholder::after {
+    border-bottom: 2px solid #B0141A;
+    border-right: 2px solid #B0141A;
+    bottom: 18px;
+    content: "";
+    height: 26px;
+    position: absolute;
+    right: 18px;
+    width: 26px;
+}
+
+.project-media-placeholder span {
+    border: 1px solid rgba(31, 42, 55, 0.14);
+    bottom: 18px;
+    left: 18px;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+}
+
+.project-detail-placeholder {
+    margin-top: 28px;
 }
 
 .project-card h3 {

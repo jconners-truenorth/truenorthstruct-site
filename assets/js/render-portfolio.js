@@ -20,9 +20,7 @@
 function renderFeaturedProject(project) {
     return `
         <article class="featured-project">
-            <a class="featured-project-media" href="${project.url}">
-                <img src="${project.thumbnail}" alt="${project.thumbnailAlt}" width="2500" height="1667">
-            </a>
+            ${renderProjectMediaLink(project, "featured-project-media")}
 
             <div class="featured-project-content">
                 <p class="project-eyebrow">Featured project</p>
@@ -48,12 +46,26 @@ function renderProjectGrid(projects) {
 function renderProjectCard(project) {
     return `
         <article class="project-card">
-            <a href="${project.url}">
-                <img src="${project.thumbnail}" alt="${project.thumbnailAlt}" width="2500" height="1667" loading="lazy">
-            </a>
+            ${renderProjectMediaLink(project, "project-card-media", true)}
             <p class="project-eyebrow">${project.completedLabel}</p>
             <h3><a href="${project.url}">${project.title}</a></h3>
             <p>${project.summary}</p>
         </article>
+    `;
+}
+
+function renderProjectMediaLink(project, className, lazy = false) {
+    if (!project.thumbnail) {
+        return `
+            <a class="${className} project-media-placeholder" href="${project.url}" aria-label="View ${project.title}">
+                <span aria-hidden="true"></span>
+            </a>
+        `;
+    }
+
+    return `
+        <a class="${className}" href="${project.url}">
+            <img src="${project.thumbnail}" alt="${project.thumbnailAlt}" width="2500" height="1667"${lazy ? ' loading="lazy"' : ""}>
+        </a>
     `;
 }
